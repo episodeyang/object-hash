@@ -18,6 +18,7 @@ var crypto = require('crypto');
  * @api public
  */
 exports = module.exports = objectHash;
+if (window) window.objectHash = objectHash;
 
 function objectHash(object, options){
   options = options || {};
